@@ -1,0 +1,60 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header.hero {
+  text-align: center;
+  background: #ffd1dc;
+  padding: 2rem 1rem;
+}
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #b03060;
+  margin: 0;
+}
+.tagline {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 1.5rem;
+}
+.navbar a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #a64e6d;
+  font-weight: 500;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+main.home-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.card {
+  background: #ffe9ec;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ffd1dc;
+  color: #555;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  main.home-sections {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
